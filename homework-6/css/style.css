@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  
+  
+}
+*, *::before, 
+ *::after {
+  box-sizing: inherit;
+}
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.nav-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50px;
+
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 490px;
+  list-style: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.head-menu {
+  position: relative;
+  text-decoration: none;
+  color: #c4eee6; 
+  transition: color 200ms linear;
+} 
+.head-menu::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  background: #f38181;
+  transform: scaleX(0);
+ 
+}
+.menu a:hover {
+  color: #f38181;
+}
+.head-menu:hover::after {
+  transform: scaleX(1);
+}
+
+.descr {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
+
+}
+.descr-1 {
+  margin-top: 138px;
+}
+
+h2 {
+  position: relative;
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;  
+}
+.h2-services {
+  margin-bottom: 106px;
+}
+.h2-team {
+  margin-bottom: 88px;
+}
+h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #f38181;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -40px;
+
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-list-item {
+  position: relative;
+  width: 384px;
+  height: auto;
+  padding: 0 34px 0 84px;
+  margin-bottom: 100px;  
+}
+.service-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-right: 29px;
+  padding-left: 22px;
+  
+}
+
+h3 {
+  font-size: 14px;
+  color: #999999;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 20px;
+}  
+
+p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; 
+  line-height: 1.6;
+  text-align: left;
+  color: #999999;
+}
+.team-descr {
+  margin: 0 130px;
+  text-align: center;
+  
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0 156px 0;
+  padding: 0;
+ 
+}
+.team-list-member {
+  position: relative;
+  width: 380px;
+  max-width: 100%;
+  height: 470px;
+  list-style: none;
+
+
+}
+.name {
+  margin: 30px 0 12px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+.title {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.4;
+  color: #999999;
+}
+ 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 470px;
+  background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.7) 100%);
+  box-shadow: 10px 10px 0px #95e1d3;
+  visibility: hidden;
+  z-index: 1;
+  margin: 0;
+}
+
+ .team-list-member:hover .overlay,
+ .team-list-member:focus .overlay {
+  visibility: visible;
+}
+  
+
+.overlay-wrapper:hover {
+  cursor: pointer;
+  background: #95e1d3;
+  transform: translate(-10px, -10px);
+
+}
+
+.overlay-1 {
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.overlay-wrapper {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: #ffff00;
+  text-align: center;
+  line-height: 55px;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+.overlay-wrapper:last-child {
+    margin-right: 0;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  height: 64px;
+
+}
+.footer a {
+  text-decoration: none;
+  color: #ee7474;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: #cccccc;
+}
+
+.subscribe {
+  width: 150px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffff;
+  background: #95e1d3;
+  border: none;
+
+}
+
+.input {
+  width: 226px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+}
+::placeholder  {
+  font-size: 15px;
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  padding-left: 12px;
+}
