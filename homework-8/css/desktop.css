@@ -1,0 +1,66 @@
+@media (min-width: 1440px) {
+  .wrapper {
+      width: 1440px;
+      margin: 0 auto;
+  }
+  .head {
+      background-image: url('../img/bg-desktop.png');
+      height: 700px;
+      margin-bottom: 69px;
+  }
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 940px;
+      padding-top: 51px;
+  }
+  .wrap-button {
+      order: 2;
+  }
+  .wrap-logo {
+      padding-top: 0;
+      order: 1;
+  }
+  .wrap-cont {
+      width: 940px;
+  }
+  h1 {
+      font-size: 52px;
+      padding: 0px 218px;
+      text-align: center;
+      line-height: 61px;
+      margin-bottom: 30px;
+  }
+  .bottom-text {
+      font-size: 24px;
+      margin-bottom: 47px;
+  }
+  .link {
+      padding: 17px 23px;
+  }
+  .caption-3 {
+      margin-bottom: 32px;
+  }
+  .box-pink {
+      order: 1;
+  }
+  .box-orange {
+      order: 3;
+  }
+  .box-green {
+      order: 2;
+  }
+  .box-blue {
+      order: 4;
+  }
+  .team {
+      display: flex;
+      width: 940px;
+      justify-content: space-between;
+      margin-bottom: 38px;
+  }
+  .box:not(:nth-child(-n)) {
+      margin-bottom: 0;
+  }
+}
