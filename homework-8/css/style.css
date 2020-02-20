@@ -1,187 +1,218 @@
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.head {
-  background-image: url('../img/bg-mobile.png');
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 540px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 65px;
-  background-position: center;
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
 }
 
-.nav {
-  padding-top: 33px;
-  text-align: center;
-}
-
-.button {
+a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  color: #ffffff;
-  font-family: var(--main-font);
-  font-size: 14px;
-  font-weight: 700;
-  margin-right: 20px;
 }
 
-.button:nth-child(2) {
-  padding: 7px 15px;
-  border: 2px solid #ffffff;
-  border-radius: 21px;
-  margin-right: 0;
-}
-
-.wrap-logo {
-  padding-top: 130px;
-  margin-bottom: 30px;
-}
-
-.logo {
-  text-decoration: none;
-  font-family: var(--main-font);
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.wrap-cont {
-  text-align: center;
+p {
+  font-family: Roboto;
+  font-weight: 300;
 }
 
 h1 {
-  font-family: var(--main-font);
-  color: #ffffff;
+  font-size: 20px;
   font-weight: 700;
-  font-size: 30px;
-  text-align: center;
   text-transform: uppercase;
-  line-height: 34px;
-  margin-bottom: 13px;
+  letter-spacing: 1px;
 }
 
-.bottom-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  color: #ffffff;
-  text-align: center;
-  padding: 0px 50px;
-  margin-bottom: 33px;
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a,
+button,
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .link {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 13px 47px;
-  background-color: var(--main-color);
-  border-radius: 25px;
-  font-family: var(--main-font);
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  border: 2px solid rgb(255, 78, 80);
+  border-radius: 25px;
+  text-align: center;
 }
 
-.section-team {
+.container {
+  min-width: 320px;
+  width: 100%;
+  height: 540px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.wrap__holiday-dreams {
+  padding: 24px 0;
+  min-height: 540px;
+  height: 100%;
+  text-align: center;
+  background: no-repeat url("../img/bg_desktop.png") center top;
+  object-fit: cover;
+  background-size: cover;
+  background-color: rgb(26, 25, 21);
+}
+
+.registration-wrap {
+  margin-bottom: 34px;
+}
+
+.registration-btn {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  padding: 11px 19px;
+  margin-bottom: 75px;
+  border: 2px solid rgb(255, 255, 255, 0);
+  border-radius: 25px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.registration-btn:hover {
+  border: 2px solid rgb(255, 255, 255, 1);
+}
+
+.registration-btn:active {
+  background-color: rgb(98, 228, 200);
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.dreams__title {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.dreams__text {
+  margin: 0 auto;
+  width: 220px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-bottom: 33px;
+}
+
+.dreams__link {
+  padding: 13px 52px;
+  background-color: rgb(255, 78, 80);
+}
+
+.dreams__link:hover {
+  color: rgb(255, 78, 80);
+  background-color: rgb(255, 255, 255);
+}
+
+.partners {
+  padding: 69px 0;
+}
+
+.partners-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.caption-3 {
-  font-family: var(--main-font);
-  color: #333333;
-  font-weight: 700;
+.title {
+  display: block;
+  width: 282px;
+  color: rgb(51, 51, 51);
   font-size: 22px;
   text-align: center;
   margin-bottom: 15px;
 }
 
-.box {
-  width: 215px;
-  margin-bottom: 28px;
-}
-
-.box:last-child {
-  margin-bottom: 0;
-}
-
-.team {
-  margin-bottom: 28px;
-}
-
-.box-img {
-  margin-bottom: 17px;
+.team__item {
+  width: 220px;
+  list-style-type: none;
+  margin-bottom: 24px;
   text-align: center;
+}
+
+.team__item-wrap {
+  display: block;
   position: relative;
 }
 
-.box span {
+.team__item-wrap::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
   position: absolute;
-  right: 40px;
-  bottom: 0px;
-  width: 16px;
-  height: 16px;
-  padding: 10px;
-  border: 3px solid #ffffff;
-  border-radius: 50%;
+  right: 45px;
+  bottom: 0;
+  border: 4px solid rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: 50px;
 }
 
-.icon-pink {
-  background-color: var(--main-color);
+.icon-tv::after {
+  background-image: url("../img/tv.png");
+  background-color: rgb(255, 78, 80);
 }
 
-.icon-orange {
-  background-color: #ffa507;
+.icon-flask::after {
+  background-image: url("../img/flask.png");
+  background-color: rgb(255, 165, 7);
+}
+.icon-coffee::after {
+  background-image: url("../img/coffee.png");
+  background-color: rgb(28, 215, 173);
 }
 
-.icon-green {
-  background-color: #1cd7ad;
+.icon-telegram::after {
+  background-image: url("../img/telegram.png");
+  background-color: rgb(78, 115, 219);
 }
 
-.icon-blue {
-  background-color: #4e73db;
+.team__item-wrap {
+  margin-bottom: 14px;
 }
 
-.wrap-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.team__item-title {
+  margin-bottom: 14px;
 }
 
-.wrap-text h4 {
-  font-family: var(--main-font);
-  font-weight: 700;
+.team__item-text {
+  color: rgb(102, 102, 102);
   font-size: 14px;
-  color: #333333;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
-.wrap-text p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #666666;
-  text-align: center;
+.team__link {
+  padding: 13px 74px;
+  color: rgb(255, 78, 80);
 }
 
-.bottom-link {
-  text-decoration: none;
-  color: var(--main-color);
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 14px;
-  padding: 13px 70px;
-  border: 2px solid var(--main-color);
-  border-radius: 23px;
-  margin-bottom: 57px;
-}
-
-button {
-  cursor: pointer;
-  padding: 0;
-  border: none;
+.team__link:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 78, 80);
 }
