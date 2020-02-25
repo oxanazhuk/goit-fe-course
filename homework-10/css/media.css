@@ -1,0 +1,10 @@
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .page-banner {
+    background: no-repeat url("../img/eagle@2x-min.png") center;
+    background-size: 1920px 1000px;
+  }
+
+}
