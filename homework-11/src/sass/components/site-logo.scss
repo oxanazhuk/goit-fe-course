@@ -1,0 +1,8 @@
+.site-logo__link {
+  @extend %link;
+  color: $white-color;
+  font: {
+    family: $main-font;
+    weight: 700;
+  }
+}

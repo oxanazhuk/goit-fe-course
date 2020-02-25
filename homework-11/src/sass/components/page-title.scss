@@ -1,0 +1,21 @@
+.page-title {
+  @extend %title;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 124px;
+  color: $white-color;
+  line-height: 140px;
+  width: 900px;
+  font-size: 150px;
+  text-align: center;
+
+  &__subject {
+    display: block;
+    text-transform: none;
+    font: {
+      family: $cursive-font;
+      weight: 400;
+      size: 72px;
+    }
+  }
+}

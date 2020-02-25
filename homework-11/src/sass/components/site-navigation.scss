@@ -1,0 +1,49 @@
+.site-navigation {
+  @extend %list;
+  @extend %space-between;
+  width: 640px;
+  text-transform: uppercase;
+
+  &__item {
+    margin-top: 22px;
+
+    &-icon {
+      display: block;
+      width: 18px;
+      height: 18px;
+      fill: $white-color;
+
+      &-icon:hover,
+      &-icon:focus {
+        fill: $yellow-color;
+      }
+    }
+  }
+}
+
+.site-navigation a {
+  @extend %link;
+  display: block;
+  height: 18px;
+  color: $white-color;
+
+  &:hover,
+  &:focus {
+    color: $yellow-color;
+  }
+
+  &:after {
+    background-color: $yellow-color;
+    display: block;
+    content: '';
+    height: 3px;
+    width: 0%;
+    margin: 10px 0;
+    transition: width 0.2s linear;
+  }
+  
+  &:hover:after,
+  &:focus:after {
+    width: 100%;
+  }
+}

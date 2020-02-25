@@ -1,0 +1,34 @@
+.features-title {
+  @extend %title;
+  text-align: center;
+  font-size: 30px;
+
+  &__subject {
+    @extend %subject;
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+}
+
+.title__outline {
+  font-size: 30px;
+  margin-bottom: 100px;
+
+  &:after {
+    display: block;
+    background-color: $red-color;
+    content: '';
+    margin-top: 35px;
+    height: 3px;
+    width: 60px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.2s linear;
+    transform: translateX(-50%);
+  }
+
+  &:hover:after,
+  &:focus:after {
+    width: 18%;
+  }
+}

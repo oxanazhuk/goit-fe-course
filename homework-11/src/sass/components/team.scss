@@ -1,0 +1,105 @@
+.team-list {
+  @extend %list;
+  @extend %space-between;
+  margin-bottom: 78px;
+}
+
+.team-item {
+  display: block;
+
+  &__card {
+    display: block;
+    position: relative;
+    margin-bottom: 26px;
+  }
+
+  &__name {
+    margin-bottom: 6px;
+    @extend %title;
+    text-align: center;
+  }
+
+  &__occupation {
+    @extend %text;
+    text-align: center;
+    @extend %understyle;
+  }
+}
+
+.team-item:hover .team-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  transform: translate(-10px, -10px);
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+  cursor: pointer;
+}
+
+.team-item:hover .team-item__card img {
+  display: block;
+  position: relative;
+  transform: translate(-10px, -10px);
+  transition: transform 0.2s linear;
+}
+
+.team-item:hover .overlay-list {
+  display: flex;
+}
+
+.team-list__title {
+  margin-bottom: 6px;
+}
+
+.team-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.overlay-list {
+  display: none;
+  width: 224px;
+  height: 56px;
+  background-color: $yellow-color;
+}
+
+.overlay-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+  outline: 1px solid $red-color;
+  z-index: 100;
+
+  &:hover {
+    background-color: $red-color;
+  }
+}
+
+.overlay-item:hover .overlay-link svg {
+  fill: $white-color;
+}
+
+.overlay-link {
+  @extend %center-center;
+  height: 56px;
+  width: 56px;
+}
+
+.overlay-link svg {
+  display: block;
+  width: 50%;
+  height: 50%;
+  fill: $red-color;
+}

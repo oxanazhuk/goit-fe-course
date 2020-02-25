@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: {
+    family: $main-font;
+    family: $secondary-font;
+    family: $cursive-font;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,13 @@
+.page-button {
+  @extend %button;
+  line-height: 34px;
+  outline: 3px solid $white-color;
+  margin: 0 auto;
+  background: transparent;
+  text-align: center;
+
+  &:hover {
+    color: $red-color;
+    outline: 3px solid $red-color;
+  }
+}

@@ -1,0 +1,8 @@
+.team-paragraph {
+  width: 960px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  text-align: center;
+  @extend %text;
+}

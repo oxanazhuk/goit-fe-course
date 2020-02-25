@@ -1,0 +1,19 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-nav {
+  @extend %space-between;
+  @extend %item-center;
+}
+
+.page-info {
+  @extend %flex-column;
+}
+
+.page-nav,
+.page-info {
+  position: relative;
+  z-index: 100;
+}

@@ -1,0 +1,83 @@
+%link {
+  display: inline-block;
+  font-family: $main-font;
+  text-decoration: none;
+}
+
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%title {
+  text-transform: uppercase;
+  font: {
+    family: $main-font;
+    weight: 700;
+  }
+}
+
+%subject {
+  display: block;
+  text-transform: none;
+  font: {
+    family: $cursive-font;
+    weight: 400;
+  }
+}
+
+%button {
+  display: block;
+  color: $white-color;
+  border: none;
+  outline: none;
+  padding: 8px 30px;
+  cursor: pointer;
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+  font: {
+    size: 14px;
+    weight: 700;
+    family: $main-font;
+  }
+}
+
+%text {
+  color: $primary-text-color;
+  line-height: 24px;
+  font: {
+    size: 15px;
+    weight: 400;
+    family: $secondary-font;
+  }
+}
+
+%understyle {
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-style: italic;
+}
+
+%space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%item-center {
+  display: flex;
+  align-items: center;
+}
+
+%center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}

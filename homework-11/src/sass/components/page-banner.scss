@@ -1,0 +1,30 @@
+.page-banner {
+  display: block;
+  position: relative;
+  background: no-repeat url('/module_11/build/images/eagle.png') center center;
+  object-fit: cover;
+  min-height: 1000px;
+  height: 100%;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 1000px;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    );
+  }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .page-banner {
+    background: no-repeat url('/module_11/build/images/eagle.png') center;
+    background-size: 1920px 1000px;
+  }
+}
