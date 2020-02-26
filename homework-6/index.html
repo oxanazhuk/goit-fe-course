@@ -1,187 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="container">
-      <nav class="nav-page">
-        <logo><img src="img/logo (2).png" alt="MoGo"/></logo>
 
-        <ul class="menu">
-          <li><a href="#" class="head-menu">About</a></li>
-          <li><a href="#" class="head-menu">Service</a></li>
-          <li><a href="#" class="head-menu">Work</a></li>
-          <li><a href="#" class="head-menu">Blog</a></li>
-          <li><a href="#" class="head-menu">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Module06</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container container-header">
+            <h1 class="logo">
+                <a href="#" class="logo-link">MoGo</a>
+            </h1>
+
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">About</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Service</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Work</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Blog</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="container">
-      <section class="services">
-        <div class="descr descr-1">We work with</div>
-        <h2 class="h2-services">amazing services</h2>
-        <ul class="service-list">
-          <li class="service-list-item">
-            <img src="img/icon-watch.png" alt="#" class="service-icon" />
-            <h3>photography</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              asperiores!
-            </p>
-          </li>
-          <li class="service-list-item">
-            <img src="img/icon-web.png" alt="#" class="service-icon" />
-            <h3>web design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              asperiores!
-            </p>
-          </li>
-          <li class="service-list-item">
-            <img src="./img/icon-computer.png" alt="#" class="service-icon" />
-            <h3>creativity</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              asperiores!
-            </p>
-          </li>
-          <li class="service-list-item">
-            <img src="./img/icon-book.png" alt="#" class="service-icon" />
-            <h3>seo</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              asperiores!
-            </p>
-          </li>
-          <li class="service-list-item">
-            <img src="./img/icon-home.png" alt="#" class="service-icon" />
-            <h3>css-html</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              asperiores!
-            </p>
-          </li>
-          <li class="service-list-item">
-            <img src="./img/icon-digital.png" alt="#" class="service-icon" />
-            <h3>digital</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              asperiores!
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="team">
-        <div class="descr">Who we are</div>
-        <h2 class="h2-team">meet our team</h2>
-        <p class="team-descr">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
-          soluta nobis. Veritatis vel qui eum quis iure itaque voluptatum
-          tenetur velit quae, vitae nobis eveniet, culpa ipsam commodi minus
-          soluta?
-        </p>
-        <ul class="team-list">
-          <li class="team-list-member">
-            <img
-              src="./img/image-1.png"
-              alt="Metthew Dix"
-              width="380"
-              height="470"
-            />
-            <div class="name">matthew dix</div>
-            <div class="title">Graphic Design</div>
 
-            <div class="overlay">
-                <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/facebook.png" alt="" />
+    <!-- MAIN -->
+    <main class="main" id="main">
+        <!-- SECTION SERVICES -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="title service-title">
+                    <h2 class="main-title"><span>We work with</span>Amazing Services</h2>
                 </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/twitter.png" alt="" />
-              </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/pinterest.png" alt="" />
-              </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/instagram.png" alt="" />
-              </div>
-              </div>
-            </li>       
-         
-          <li class="team-list-member">
-            <img
-              src="./img/image-2.png"
-              alt="Cristopher Campbell"
-              width="380"
-              height="470"
-            />
-            <div class="name">cristopher campbell</div>
-            <div class="title">Branding/UX Design</div>
-            <div class="overlay">
-                <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/facebook.png" alt="" />
+
+                <ul class="services-list">
+                    <li class="service-item">
+                        <div class="service-item__box">
+                            <h3 class="service-item__title">Photography</h3>
+                            <p class="service-item__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor.</p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-item__box">
+                            <h3 class="service-item__title">Web Design</h3>
+                            <p class="service-item__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor.</p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-item__box">
+                            <h3 class="service-item__title">Creativity</h3>
+                            <p class="service-item__text">Ipsum dolor sit amet, consectetur adipiscing elit,sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-item__box">
+                            <h3 class="service-item__title">Seo</h3>
+                            <p class="service-item__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor.</p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-item__box">
+                            <h3 class="service-item__title">Css/Html</h3>
+                            <p class="service-item__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor.</p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-item__box">
+                            <h3 class="service-item__title">Digital</h3>
+                            <p class="service-item__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION TEAM -->
+        <section class="team" id="team">
+            <div class="container">
+                <div class="title team-title">
+                    <h2 class="main-title"><span>Who we are</span>Meet our team</h2>
                 </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/twitter.png" alt="" />
-              </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/pinterest.png" alt="" />
-              </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/instagram.png" alt="" />
-              </div>
-              </div>
-          </li>
-          <li class="team-list-member">
-            <img
-              src="./img/image-3.png"
-              alt="Michael Fertic"
-              width="380"
-              height="470"
-            />
-            <div class="name">michael fertic</div>
-            <div class="title">Developer</div>
-            <div class="overlay">
-                <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/facebook.png" alt="" />
+
+                <div class="description">
+                    <p class="description-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/twitter.png" alt="" />
-              </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/pinterest.png" alt="" />
-              </div>
-              <div class="overlay-wrapper">
-                <img class="overlay-1" src="./img/instagram.png" alt="" />
-              </div>
-              </div>
-          </li>
-        </ul>
-      </section>
+
+                <ul class="team-list">
+                    <li class="team-list__item">
+                        <div class="overlay-wrap">
+                            <img src="./img/photo01.jpg" alt="lumberjack" class="team-list__img" width="380"
+                                height="470">
+
+                            <div class="overlay">
+                                <ul class="overlay-list">
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/twitter.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/pinterest.png" alt="pinterest">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/instagram.png" alt="instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="team-list__title">Matthew Dix</h3>
+                        <p class="team-list__specialty">Graphic Design</p>
+                    </li>
+
+                    <li class="team-list__item">
+                        <div class="overlay-wrap">
+                            <img src="./img/photo02.jpg" alt="lumberjack" class="team-list__img">
+
+                            <div class="overlay">
+                                <ul class="overlay-list">
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/twitter.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/pinterest.png" alt="pinterest">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/instagram.png" alt="instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="team-list__title">Christopher Campbell</h3>
+                        <p class="team-list__specialty">Branding/UX design</p>
+                    </li>
+
+                    <li class="team-list__item">
+                        <div class="overlay-wrap">
+                            <img src="./img/photo03.jpg" alt="lumberjack" class="team-list__img">
+
+                            <div class="overlay">
+                                <ul class="overlay-list">
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/facebook.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/twitter.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/pinterest.png" alt="pinterest">
+                                        </a>
+                                    </li>
+                                    <li class="overlay-item">
+                                        <a href="#" class="overlay-link">
+                                            <img src="./img/instagram.png" alt="instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="team-list__title">Michael Fertig</h3>
+                        <p class="team-list__specialty">Developer</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer class="container footer">
-      <span>&copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a></span>
-      <form action="#" method="POST" class="form">
-        <input class="input" type="text" name="email" placeholder="Your Email..." />
-        <button class="subscribe">subscribe</button>
-      </form>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container footer-container">
+            <div class="footer-wrap">
+                <p class="footer-text">© 2016 MoGo free PSD template by</p>
+                <a href="" class="footer-link">Laaqiq</a>
+            </div>
+
+            <form action="#" class="footer-form">
+                <input type="email" name="email-address" placeholder="Your Email...">
+                <button type="submit" class="submit btn" value="Submit">Subscribe</button>
+            </form>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
