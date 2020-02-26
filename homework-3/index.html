@@ -5,84 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Our Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap" rel="stylesheet">
+    <!-- Main Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>My first website</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- NAVIGATION -->
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">lifestyle</a>
+    <div class="container">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">lifestyle</a>
                 </li>
-                <li>
-                    <a href="#">photodiary</a>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">photodiary</a>
                 </li>
-                <li>
-                    <a href="#">music</a>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">music</a>
                 </li>
-                <li>
-                    <a href="#">travel</a>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">travel</a>
                 </li>
             </ul>
-        </div>
-        <!-- BODDY -->
-        <div class="body">
-            <!-- BODY - ARTICLE -->
-            <div class="article">
-                <img src="image/image-1.jpg" alt="image-1">
-                <span>lifestyle</span>
-                <h2>More than just a music fectival</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam cumque culpa eligendi fuga eos in sunt,
-                    accusantium commodi blanditiis sint fugit architecto voluptatem odit labore accusamus?</p>
-            </div>
-            <div class="article">
-                <img src="image/image-2.jpg" alt="image-2">
-                <span>lifestyle</span>
-                <h2>Life tastes better with coffee</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam cumque culpa eligendi fuga eos in sunt,
-                    accusantium commodi blanditiis sint fugit architecto voluptatem odit labore accusamus?</p>
-            </div>
-            <div class="article">
-                <img src="./image/image-3.jpg" alt="image-3">
-                <span>photodiary</span>
-                <h2>American dream</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam cumque culpa eligendi fuga eos in sunt,
-                    accusantium commodi blanditiis sint fugit architecto voluptatem odit labore accusamus?</p>
-            </div>
-            <div class="article">
-                <img src="./image/image-4.jpg" alt="image-4">
-                <span>photodiary</span>
-                <h2>A day exploring the Alps</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam cumque culpa eligendi fuga eos in sunt,
-                    accusantium commodi blanditiis sint fugit architecto voluptatem odit labore accusamus?</p>
-            </div>
-            <div class="article">
-                <img src="./image/image-5.gif" alt="image-5">
-                <span>lifestyle</span>
-                <h2>Top 10 songs for running</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam cumque culpa eligendi fuga eos in sunt,
-                    accusantium commodi blanditiis sint fugit architecto voluptatem odit labore accusamus?</p>
-            </div>
-            <div class="article">
-                <img src="./image/image-6.gif" alt="image-6">
-                <span>lifestyle</span>
-                <h2>Cold winter day</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quam cumque culpa eligendi fuga eos in sunt,
-                    accusantium commodi blanditiis sint fugit architecto voluptatem odit labore accusamus?</p>
-            </div>
-        </div>
-        <!-- FOOTER -->
-        <div class="button">
-            <button>
-                Load more
-            </button>
-        </div>
+        </nav>
     </div>
+
+    <section class="emotions">
+        <div class="container">
+            <div class="box">
+                <img src="./img/photo01.jpg" alt="photo" class="box__img" width="420" height="280">
+                <p class="box__subtitle">Lifestyle</p>
+                <h2 class="box__title">More than just a music festival </h2>
+                <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris</p>
+            </div>
+            <div class="box">
+                <img src="./img/photo02.jpg" alt="photo" class="box__img" width="420" height="280">
+                <p class="box__subtitle">Lifestyle</p>
+                <h2 class="box__title">Life tastes better with coffee</h2>
+                <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/photo03.jpg" alt="photo" class="box__img" width="420" height="280">
+                <p class="box__subtitle">Photodiary</p>
+                <h2 class="box__title">American dream</h2>
+                <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris</p>
+            </div>
+            <div class="box">
+                <img src="./img/photo04.jpg" alt="photo" class="box__img" width="420" height="280">
+                <p class="box__subtitle">Photodiary</p>
+                <h2 class="box__title">A day exploring the Alps</h2>
+                <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/photo05.jpg" alt="photo" class="box__img" width="420" height="280">
+                <p class="box__subtitle">Lifestyle</p>
+                <h2 class="box__title">Top 10 song for running</h2>
+                <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris</p>
+            </div>
+            <div class="box">
+                <img src="./img/photo06.jpg" alt="photo" class="box__img" width="420" height="280">
+                <p class="box__subtitle">Lifestyle</p>
+                <h2 class="box__title">Cold winter days</h2>
+                <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <button type="button" class="btn">Load more</button>
+        </div>
+    </section>
 </body>
 
 </html>
