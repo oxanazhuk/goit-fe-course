@@ -5,107 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/variable.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <title>Document</title>
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- MAIN STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Module07</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- HEADER -->
-        <header>
-            <div class="wrap-header">
-                <div class="logo">
-                    <a href="#">Golden</a>
+    <header class="header" id="header">
+        <div class="container container-header">
+            <h1 class="logo">Golden</h1>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Home</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Services</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Portfolio</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">About</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main" id="main">
+        <!-- SECTION SERVICES -->
+        <section class="section-services">
+            <div class="container container-service">
+                <div class="title service-title">
+                    <h2 class="service-title__main">Services</h2>
+                    <p class="title__sub">Proin iaculis purus consequat sem cure.</p>
                 </div>
-                <nav>
-                    <div class="menu">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- SECTION -->
-        <section>
-            <div class="wrap-section">
-                <div class="services">
-                    <h2>Services</h2>
-                    <span>Proin iaculis purus consequat sem cure.</span>
-                </div>
-                <article>
-                    <ul class="container">
-                        <li class="box">
-                            <div class="circle">
-                                <img src="./img/icon-basket.png" alt="icon-basket">
-                            </div>
-                            <h4>E-Commerce</h4>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                                posuere odio in tincidunt.
-                            </p>
+
+                <div class="features">
+                    <ul class="features__list">
+                        <li class="features__list-item">
+                            <h3 class="list-item__title">E-Commerce</h3>
+                            <p class="list-item__text">Proin iaculis purusconsequat sem cure digni ssim. Donec
+                                porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                         </li>
-                        <li class="box">
-                            <div class="circle">
-                                <img src="./img/icon-laptop.png" alt="icon-laptop">
-                            </div>
-                            <h4>Responsive Web</h4>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                                posuere odio in tincidunt.
-                            </p>
+                        <li class="features__list-item">
+                            <h3 class="list-item__title">Responsive Web</h3>
+                            <p class="list-item__text">Proin iaculis purusconsequat sem cure digni ssim. Donec
+                                porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                         </li>
-                        <li class="box">
-                            <div class="circle">
-                                <img src="./img/icon-locked.png" alt="icon-locked">
-                            </div>
-                            <h4>Web Security</h4>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                                posuere odio in tincidunt.
-                            </p>
+                        <li class="features__list-item">
+                            <h3 class="list-item__title">Web Security</h3>
+                            <p class="list-item__text">Proin iaculis purusconsequat sem cure digni ssim. Donec
+                                porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                         </li>
                     </ul>
-                </article>
-            </div>
-        </section>
-        <!-- CONTAINER-FORM -->
-        <div class="container-form">
-            <div class="wrap-map">
-                <div class="contact">
-                    <h2>Contact us</h2>
-                    <span>Proin iaculis purus consequat sem cure.</span>
-                    <form action="#" method="GET">
-                        <div class="input-form">
-                            <input type="text" name="name" placeholder="your name *" required="required">
-                            <input type="email" name="email" placeholder="your e-mail *" required="required">
-                            <input type="text" name="subject" placeholder="subject">
-                        </div>
-                        <div class="message">
-                            <textarea name="message" placeholder="your message *" required="required"></textarea>
-                        </div>
-                        <input class="submit" type="submit" value="Send Message">
-                    </form>
                 </div>
             </div>
-        </div>
-    </div>
+
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section class="section-contact">
+            <div class="container container-contact">
+                <!-- TITLE -->
+                <div class="title contact-title">
+                    <h2 class="contact-title__main">Contact us</h2>
+                    <p class="title__sub">Proin iaculis purus consequat sem cure.</p>
+                </div>
+
+                <!-- FORM -->
+                <form action="#">
+                    <div class="form">
+                        <input type="text" name="name" placeholder="your Name *" class="firstname">
+                        <input type="email" name="emailaddress" placeholder="your e-mail *" class="email">
+                        <input type="text" name="subject" placeholder="subject" class="subject">
+                        <textarea name="Message" cols="20" rows="10" placeholder="Your message *"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>
