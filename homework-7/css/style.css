@@ -223,15 +223,15 @@ header {
 }
 
 .features__list-item:nth-child(1)::before {
-  background-image: url("../img/Icon-Basket.png");
+  background-image: url("../img/icon-basket.png");
 }
 
 .features__list-item:nth-child(2)::before {
-  background-image: url("../img/Icon-Laptop.png");
+  background-image: url("../img/icon-laptop.png");
 }
 
 .features__list-item:nth-child(3)::before {
-  background-image: url("../img/Icon-Locked.png");
+  background-image: url("../img/icon-locked.png");
 }
 
 .list-item__text {
